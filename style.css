@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #e3e3e3;
+}
+
+.content {
+    display: flex;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 300px;
+    padding: 15px;
+    border: 2px solid #03d3fc;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 35%;
+    top: 150px;
+}
+
+.inputs, .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    gap: 15px;
+}
+
+.input-group {
+    gap: 5px;
+}
+
+.input {
+    padding: 5px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+}
+
+.input:focus {
+    border: 1px solid #03d3fc;
+}
+
+.btn {
+    width: 50%;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #03d3fc;
+    border: 1px solid #00b0d3;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.result {
+    position: absolute;
+    right: 10%;
+    top: 168px;
+    width: 550px;
+    height: 300px;
+    border: 2px solid #03d3fc;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    flex-direction: column;
+    display: none;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+tr {
+    text-align: left;
+}
+
+td, th {
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 5px;
+    vertical-align: middle;    
+}
+
+.bg { 
+    background-color: #38eb68;
+}
+
+.imcResult {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 28px;
+    font-weight: bold;
+}
+
+.slideAnimation {
+    animation: slide 1s ease;
+}
+
+@keyframes slide {
+    from {
+        left: 35%
+    }
+
+    to {
+        left: 10%;
+    }
+}
